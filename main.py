@@ -16,6 +16,9 @@ class Wave:
         self.fname = wav_fname
         if self.fname is not None:
             self.read_wav()
+            plt.plot(self.time, self.signal)
+            plt.title("LA# signal")
+            plt.show()
 
     #lecture
     def read_wav(self):
